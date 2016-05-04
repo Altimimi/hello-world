@@ -1,0 +1,68 @@
+"""  вантовый симул€тор"""
+import math
+import random
+import numpy as np
+
+
+class Qubit:
+	def q(Pol11,a,b):
+		a=random.randrange(0,1,1); 
+		b=random.randrange(0,1,1);
+		Bas11=np.array([0],[1],[1/sqrt(2)],[-1/sqrt(2)]);
+		Bas12=np.array([0],[1],[1/sqrt(2)],[-1/sqrt(2)]);
+		if (a==0 and b==0):
+			Pol11=0;
+			qubit=[[Bas11(1)],[Bas12(4)]];
+
+		if (a==1 and b==0):
+			Pol11=90;
+			qubit=[[Bas11(2)],[Bas12(3)]];
+
+		if (a==0 and b==1):
+			Pol11=45;
+			qubit=[[Bas11(3)],[Bas12(0)]];
+
+
+		if (a==1 and b==1):
+			Pol11=135;
+			qubit=[[Bas11(4)],[Bas12(2)]];
+
+
+		print Pol11;
+		
+		print qubit;
+		return q;
+
+	def AlisaSay(j,i,Pol1,a1,b2):
+		j=0;
+		if j<6:
+			j=j+1;
+			a1=random.randrange(0,1,1); 
+			b2=random.randrange(0,1,1);
+			Bas1=np.array([0],[1],[1/sqrt(2)],[-1/sqrt(2)]);
+			Bas2=np.array([0],[1],[1/sqrt(2)],[-1/sqrt(2)]);
+
+			if (a1==0 and b2==0):
+				Pol1=0;
+				qubit[j]=[[Bas1(1)],[Bas2(4)]];
+
+			if (a1==1 and b2==0):
+				Pol1=90;
+				qubit[j]=[[Bas1(2)],[Bas2(3)]];
+
+			if (a1==0 and b2==1):
+				Pol1=45;
+				qubit[j]=[[Bas1(3)],[Bas2(0)]];
+
+
+			if (a1==1 and b2==1):
+				Pol1=135;
+				qubit[j]=[[Bas1(4)],[Bas2(2)]];
+		
+
+			qubits = [[qubit[j] for j in xrange(5)] for i in xrange(1)];
+		print qubits;
+
+
+
+
