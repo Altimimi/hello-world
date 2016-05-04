@@ -1,0 +1,150 @@
+class Particle:
+	def _init_(self,poll,poll1):
+		self.changePoll=poll;
+		self.changePoll1=poll1;
+
+
+
+	def qubit(self,poll):
+		'''¬ведите, ради Ѕога, какую-нибудь пол€ризацию : 0,45,90,135'''
+		if (Poll==0;): 
+			self.a=0;
+			self.b=0
+			self.qubit=[[1,0],[1/math.sqrt(2),-1/math.sqrt(2)]];
+
+		if (Poll==90;):
+			self.a=1;
+			self.b=0
+			self.qubit=[[0,1],[1/math.sqrt(2),1/math.sqrt(2)]];
+
+		if (Poll==45):
+			self.a=0;
+			self.b=1
+			self.qubit=[[1/math.sqrt(2),1/math.sqrt(2)],[1,0]];
+
+
+		if (Poll==135;):
+			self.a=1;
+			self.b=1
+			self.qubit=[[-1/math.sqrt(2),1/math.sqrt(2)],[0,1]];
+
+		else: 
+			self.a=0;
+			self.b=0;
+			self.qubit=0;
+
+#как вызывать эту :
+Particle.qubit.__doc__;
+q1=Particle();
+q1.qubit(0);#это если пол€ризаци€ 0 равна
+print(q1.a,q1.b,q1.qubit);
+
+	def Onequb3basis(self,poll1): 
+		'''¬ведите, ради Ѕога, какую-нибудь пол€ризацию : 0,45,90,135, circle1,circle2'''
+		if (poll1==0): 
+
+			self.qubit=[[1,0],[1/math.sqrt(2),-1/math.sqrt(2)]];
+
+		if (poll1==90):
+
+			self.qubit=[[0,1],[1/math.sqrt(2),1/math.sqrt(2)]];
+
+		if (poll1==45):
+
+			self.qubit=[[1/math.sqrt(2),1/math.sqrt(2)],[1,0]];
+
+
+		if (poll1==135):
+
+			self.qubit=[[-1/math.sqrt(2),1/math.sqrt(2)],[0,1]];
+
+		if (poll1==circle1):
+
+			self.qubit=[[1/math.sqrt(2),j/math.sqrt(2)],[1,0]];
+
+		if (poll1==circle2):
+
+			self.qubit=[[-1/math.sqrt(2),j/math.sqrt(2)],[0,1]];
+
+		else: 
+			self.qubit=0;
+			Print ("Ќеправильно пол€ризацию ввели");
+
+#как вызывать эту :
+Particle.Onequb3basis.__doc__;
+q1=Particle();
+q1.Onequb3basis(0);#это если пол€ризаци€ 0 равна
+print(q1.a,q1.b,q1.qubit);
+
+	def Onequb(self): # генерируем одиночный кубит с рандомной пол€ризацией 
+		'''–андомно генерируемый кубит'''
+		self.a=np.random.choice([0,1]); 
+		self.b=np.random.choice([0,1]);
+		if (a==0 and b==0): # 4 услови€ дл€ выбора определенной пол€ризации
+			self.Pol=0;
+			self.bas=0;
+			self.qubit=[[1,0],[1/math.sqrt(2),-1/math.sqrt(2)]];
+
+		if (a==1 and b==0):
+			self.Pol=90;
+			self.bas=0;
+			self.qubit=[[0,1],[1/math.sqrt(2),1/math.sqrt(2)]];
+
+		if (a==0 and b==1):
+			self.Pol=45;
+			self.bas=1;
+			self.qubit=[[1/math.sqrt(2),1/math.sqrt(2)],[1,0]];
+
+	
+		if (a==1 and b==1):
+			self.Pol=135;
+			self.bas=1;
+			self.qubit=[[-1/math.sqrt(2),1/math.sqrt(2)],[0,1]];
+		else:
+			Print("Nepravilno");
+#как вызывать эту :
+Particle.Onequb3basis.__doc__;
+q1=Particle();
+q1.Onequb();#это если пол€ризаци€ 0 равна
+print(self.a,self.b,self.Pol,self.bas,self.qubit);
+
+		
+	def phase_qubit(self);
+	# кубит с фазой дл€ COW
+		b=np.random.choice([01,10,11]);
+		ph=math.pi/3;
+		phase=complex(0,ph);
+		if (b==01):
+			self.qubit0=[1,0];
+			self.qubit1= [0,e**(phase)];
+
+		if (b==10):
+			self.qubit0=[0,e**(phase)];
+			self.qubit1= [1,0];
+
+		if (b==11):
+			self.qubit0=[0,e**(phase)];
+			self.qubit1= [0,e**(phase)];
+
+		self.qubit_1=qubit0[0]*0+qubit0[1]*1;
+		self.qubit_2=qubit1[0]*0+qubit1[1]*1;
+
+
+	def ebit(self);
+		self.H=np.random.choice([0,1]);
+		self.G=np.random.choice([0,1]]);
+		if (H==1):
+			V1=0;
+		if (H==0):
+			V1=1;
+		if (G==1):
+			V2=0;
+		if (G==1):
+			V2=1;
+		self.ebit=(1/math.sqrt(2))*((H+V1)+(G+V2));
+		print("ebit=",1/math.sqrt(2),"(|",H,V1,">+|",G,V2,">)");
+		else:
+`			print("nepravilno");
+
+
+
